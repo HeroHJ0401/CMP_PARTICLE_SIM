@@ -6,7 +6,7 @@ Pad 돌기 접촉의 탄성/소성 여부, 입자 하나가 받는 하중, 임�
 - 저장소: HeroHJ0401/CMP_PARTICLE_SIM (로컬 `CMP/particle-build/`). 파일: `cmp_particle_pressure_sim_R02.py`
 - 의존성: **파이썬 표준 라이브러리만** (tkinter 포함). numpy/matplotlib 불필요.
 - 실행: `python cmp_particle_pressure_sim_R02.py`
-- 빌드: GitHub Actions (`.github/workflows/build-windows.yml`, `build-macos.yml`)가 push 시 PyInstaller로 EXE / .app 생성.
+- 빌드: GitHub Actions `.github/workflows/build.yml` 하나가 push 시 Windows EXE 와 macOS .app 을 **동시에** 빌드한다. 저장소에서 가장 높은 R번호의 스크립트를 자동으로 찾아 산출물 이름에 버전을 붙인다 (예: `CMP Particle Pressure Simulator R02.exe`, `... R02-macOS.zip`). 새 버전은 파일명의 R번호만 올려서 push 하면 된다.
 
 ## R01 → R02 변경 요약
 
