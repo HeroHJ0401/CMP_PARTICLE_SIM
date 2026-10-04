@@ -21,7 +21,7 @@ jobs:
           pip install pyinstaller
 
       - name: Build app
-        run: pyinstaller --windowed --onefile --name "CMP Particle Pressure Simulator" cmp_particle_pressure_sim_R01.py
+        run: pyinstaller --windowed --onefile --name "CMP Particle Pressure Simulator" cmp_particle_pressure_sim_R02.py
 
       - name: Zip app bundle
         run: |
